@@ -1,0 +1,14 @@
+var x = 10;
+var y = 20;
+var result = x + y * 2;
+print(result);
+
+func add(a, b) {
+    return a + b;
+}
+
+var sum = add(15, 25);
+print(sum);
+
+
+print("hello");

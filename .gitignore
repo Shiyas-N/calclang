@@ -1,0 +1,63 @@
+# Build folders
+/build/
+/bin/
+/out/
+/dist/
+/CMakeFiles/
+/CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# VSCode settings
+.vscode/
+
+# Backup and temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.so
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Generated test or example binaries
+/examples/*.exe
+/examples/*.out
+/examples/*.app
+
+# Debug / Release configuration folders
+Debug/
+Release/
+
+# IDE-specific
+*.user
+*.suo
+*.ncb
+*.vcxproj*
+*.xcodeproj
+.idea/
+
+# Misc
+*.DS_Store
+Thumbs.db
