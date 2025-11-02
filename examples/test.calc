@@ -10,5 +10,3 @@ func add(a, b) {
 var sum = add(15, 25);
 print(sum);
 
-
-print("hello");

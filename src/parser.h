@@ -81,8 +81,7 @@ public:
     vector<string> params;
     vector<unique_ptr<StmtAST>> body;
     
-    FunctionAST(const string& n, vector<string> p, 
-                vector<unique_ptr<StmtAST>> b)
+    FunctionAST(const string& n, vector<string> p, vector<unique_ptr<StmtAST>> b)
         : name(n), params(move(p)), body(move(b)) {}
 };
 

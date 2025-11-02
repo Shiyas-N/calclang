@@ -1,0 +1,22 @@
+var a = 5 + 3;
+var b = 10 * 2;
+var c = a + b;
+
+var x = 100;
+var y = x + 0;
+var z = y * 1;
+
+var unused = 42 * 99;
+
+print(c);
+print(z);
+
+func calculate(p, q) {
+    var temp1 = p + 0;
+    var temp2 = q * 1;
+    var temp3 = 5 + 5;
+    return temp1 + temp2 + temp3;
+}
+
+var result = calculate(10, 20);
+print(result);

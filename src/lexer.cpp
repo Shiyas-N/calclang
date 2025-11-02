@@ -101,7 +101,7 @@ Token Lexer::getNextToken() {
         case ';': return Token(TOKEN_SEMICOLON, ";", startLine, startCol);
         case ',': return Token(TOKEN_COMMA, ",", startLine, startCol);
         default:
-            return Token(TOKEN_UNKNOWN, std::string(1, c), startLine, startCol);
+            return Token(TOKEN_UNKNOWN, string(1, c), startLine, startCol);
     }
 }
 

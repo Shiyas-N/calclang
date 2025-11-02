@@ -1,6 +1,8 @@
 #include "lexer.h"
 #include "parser.h"
 #include "codegen.h"
+#include "optimizer.h"
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -48,6 +50,17 @@ int main(int argc, char* argv[]) {
         
         cout << "=== LLVM IR Output ===" << endl;
         codegen.dump();
+
+
+        // Run optimizations
+        
+        Optimizer optimizer(codegen.getModule());
+        optimizer.optimize();
+        
+        // Output optimized IR
+        cout << "\n=== Optimized LLVM IR ===" << endl;
+        codegen.dump();
+
         
         string outputFile = "output.ll";
         if (argc >= 4 && string(argv[2]) == "-o") {
